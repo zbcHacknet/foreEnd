@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS学习task01</title>
+  </head>
+  <body>
+    <p>这是谁</p>
+    <p id="demo"></p>
+    <button onclick="alert('这是button单击事件')">单击按钮</button>
+    <div id="mydiv">初始内容</div>
+    <button onclick="MyFunction()">更改标签内容</button>
+  </body>
+  <script type="text/javascript">
+    // alert("这是JavaScript弹窗!")
+    // document.write("<p>this is programmers<p>");
+    document.getElementById("demo").innerHTML = "更改项目";
+    function MyFunction() {
+      document.getElementById("mydiv").innerHTML = "茉莉花开";
+      document.getElementById("demo").innerText = "弱水无情,万物可沉";
+    }
+    /*var dog = {
+        name:"阿黄",
+        age:15,
+        weight:23.2
+    }
+    
+    console.log(dog.name);
+    console.log(dog["age"]);*/
+
+    //var cousrse = ["语文","数学","英语"];
+    var course = new Array("语文", "数学", "英语");
+    // course[0] = "语文";
+    // course[1] = "数学";
+    // course[2] = "英语";
+    console.log(course[0]);
+    console.log(course[1]);
+    console.log(course[2]);
+    var age = "234.234";
+    var y = 23;
+    var x = 1;
+    var flag = false;
+    console.log(typeof course);
+    console.log(typeof age);
+    console.log(typeof flag);
+    console.log(x = y + x + age);
+    console.log(--y);
+  </script>
+</html>

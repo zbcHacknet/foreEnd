@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    button[disabled] {
+      cursor: pointer;
+      color: aqua;
+    }
+    div[class="iconer"] {
+      color: bisque;
+    }
+
+    div[class$="iconer"] {
+      color: rgb(212, 143, 59);
+    }
+    div[class^="iconer"] {
+      color: rgb(236, 4, 24);
+    }
+    div[class*="iconer"] {
+      color: blueviolet;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>Hello World</li>
+      <li><input type="button" value="按钮" disabled="disabled"></li>
+      <li><input type="button" value="按钮" ></li>
+      <li><input type="button" value="按钮" disabled="disabled"></li>
+      <li><input type="button" value="按钮" ></li>
+      <li><button >按钮</button></li>
+      <li><button disabled="disabled">按钮</button></li>
+      <li><button disabled="disabled">按钮</button></li>
+      <li><div class="iconer" >图标1</div></li>
+      <li><div class="aiconer" >图标2</div></li>
+      <li><div class="iconerb" >图标3</div></li>
+      <li><div class="aiconerb" >图标4</div></li>
+    </ul>
+  </body>
+  
+</html>
